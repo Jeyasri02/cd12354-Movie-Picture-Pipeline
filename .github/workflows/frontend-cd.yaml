@@ -13,7 +13,7 @@ env:
   CLUSTER_NAME: cluster           # <- update if your EKS cluster has a different name
   # Update this to your DEPLOYED backend LoadBalancer URL once the backend is live.
   # http://localhost:5000 only works for local dev, not for the deployed frontend.
-  REACT_APP_MOVIE_API_URL: http://localhost:5000
+  REACT_APP_MOVIE_API_URL: http://a98eaef254e994e448c3214026bcf320-2105014625.us-east-1.elb.amazonaws.com
 
 defaults:
   run:
