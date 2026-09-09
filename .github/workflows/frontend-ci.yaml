@@ -48,7 +48,7 @@ jobs:
         run: npm ci
 
       - name: Run tests
-        run: CI=true npm test
+        run: npm run test
 
   build:
     runs-on: ubuntu-latest
@@ -68,6 +68,9 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+      
+      - name: Run tests
+        run: npm run test
 
       - name: Build docker image
         run: |
